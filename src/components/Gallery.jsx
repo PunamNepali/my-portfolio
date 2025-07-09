@@ -14,14 +14,14 @@ export default function Gallery() {
   ];
 
   return (
-    <section id="gallery" className="py-4 px-4  bg-gray-100 flex-row">
+    <section id="gallery" className="py-28 bg-gray-100 flex-row relative ">
       <div className="w-full px-8 mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Gallery</h2>
-        <p className="text-lg mb-6">Here are some snapshots from my recent projects .</p>
+        <h2 className="text-3xl font-bold mb-4  text-indigo-700">Gallery</h2>
+        <p className="text-lg mb-6  text-indigo-700">Here are some snapshots from my recent projects .</p>
         {/* Add your gallery images or components here */}
 
         
-        <div className="grid grid-cols-5 sm:grid-cols-2 md:grid-cols-5 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -33,7 +33,7 @@ export default function Gallery() {
                 className="w-full h-64 object-cover"
               />
               <div className="p-4">
-                <h3 className="text-lg font-semibold">{project.title}</h3>
+                <h3 className="text-lg font-normal">{project.title}</h3>
               </div>
             </div>
           ))}

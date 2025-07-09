@@ -18,13 +18,13 @@ const projects = [
     title: "Student ID Card",
     description: "A student ID card design using React and tailwindCSS.",
     image: "/image/A3.png",
-    link: "/projects/student-id-card",
+    link: "https://student-id-card-lime.vercel.app/",
   },
   {
     title: "Calculator",
     description: "A simple calculator application built with React.",
     image: "/image/A4.png",
-    link: "/projects/calculator",
+    link: "https://calculator-gules-pi.vercel.app/",
   },
   {
     title: "Documentation",
@@ -37,10 +37,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-4 px-4 mx-6 bg-gray-100 flex-row">
-      <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">Projects</h2>
-        <p className="text-lg mb-6">Here are some projects I have worked on .</p>
+    <section id="projects" className="py-28 bg-gray-100 w-full flex-row">
+      <div className="w-full  px-8 mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-4  text-indigo-700">Projects</h2>
+        <p className="text-lg mb-6  text-indigo-700">Here are some projects I have worked on .</p>
 
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
           {projects.map((project, index) => (
@@ -52,8 +52,8 @@ export default function Projects() {
                 src={project.image}
                 alt={project.title}
                 className="w-full h-64 object-cover" />
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-sm text-gray-600">{project.description}</p>
+              <h3 className="text-xl font-light mb-1">{project.title}</h3>
+              <p className="text-sm text-gray-600 font-thin">{project.description}</p>
             </a>
           ))}
         </div>
